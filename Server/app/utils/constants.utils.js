@@ -1,6 +1,6 @@
 const config = {
-    PORT: 9229,
-    JWT_SECRET: "I am iron-man"
+    PORT: 5789,
+    JWT_SECRET: "Iamiron-man"
 }
 
-module.exports = config;
+module.exports = config

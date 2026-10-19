@@ -2,17 +2,16 @@ import React from 'react'
 import { NavLink, Outlet } from 'react-router'
 
 function AppLayout() {
-    const [isAppReady, UpdateAppStatus] = React.useState(false)
+    const [isAppReady, updateAppStatus] = React.useState(false)
     setTimeout(() => {
-        UpdateAppStatus(true)
-    }, 9 * 1000
-    );
+        updateAppStatus(true)
+    }, 2 * 1000);
     
 
     if (!isAppReady) {
         return (<div>
-            Page is Loading with full speed high
-        </div>)
+            Page is Loading....
+        </div>);
     }
 
     return (
@@ -29,7 +28,7 @@ function AppLayout() {
             <main>
                 <Outlet />
             </main>
-            <footer>footer</footer>
+            <footer>Footer</footer>
         </div>
     )
 }
